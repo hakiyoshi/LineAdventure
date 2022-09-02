@@ -53,13 +53,13 @@ namespace Player
             if(inputMove.sqrMagnitude == 0.0f)
             {
                 //キー入力していない場合
-                var vec = -(lineCurve.ControlPoint - lineCurve.StandardControlPoint);
+                var vec = -(lineCurve.ControlPosition - lineCurve.StandardControlPosition);
                 move = vec.normalized * (returnForce * Time.deltaTime);
 
                 if (vec.magnitude <= returnForce * Time.deltaTime)
                 {
                     move = Vector3.zero;
-                    lineCurve.ControlPoint = lineCurve.StandardControlPoint;
+                    lineCurve.ControlPosition = lineCurve.StandardControlPosition;
                     
                     
                 }
@@ -71,7 +71,7 @@ namespace Player
                 move = inputMove * (speed * Time.deltaTime);
 
                 //基準から一定以上離れていたら
-                var differenceStandard = lineCurve.ControlPoint + move - lineCurve.StandardControlPoint;
+                var differenceStandard = lineCurve.ControlPosition + move - lineCurve.StandardControlPosition;
                 var difference = differenceStandard.magnitude + - lineLength;
                 if (difference > 0.0f)
                 {
@@ -81,7 +81,7 @@ namespace Player
             }
 
             //移動
-            lineCurve.ControlPoint += move;
+            lineCurve.ControlPosition += move;
             
             //自分の座標を線のてっぺんにする
             transform.position = lineCurve.GetBezierCurvePosition(0.5f);

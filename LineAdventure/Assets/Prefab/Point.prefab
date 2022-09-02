@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2730671434634703330}
   - component: {fileID: 2730671434634703333}
   - component: {fileID: 4159122143153860936}
+  - component: {fileID: 309172574610642784}
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
@@ -114,5 +115,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffadac662d99cf74abcf38248ab63bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nearbyPoints: []
+  <nearbyPoints>k__BackingField: []
   hitRadius: 2
+--- !u!114 &309172574610642784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2730671434634703328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 033961f847ca01e449b75f2ac3fe9627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Normal>k__BackingField: {x: 0, y: 0, z: 0}

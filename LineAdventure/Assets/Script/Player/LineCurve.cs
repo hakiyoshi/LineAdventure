@@ -6,6 +6,7 @@ using NaughtyAttributes;
 using UniRx;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
@@ -20,19 +21,25 @@ namespace Player
         [field: SerializeField] public float ControlHeight { get; private set; } = 3.0f;
         [field: SerializeField] public float MoveSpeed { get; private set; } = 0.05f;
 
-        //現在踏んでいるオブジェクト
-        [SerializeField] private Transform leftPoint;
-        [SerializeField] private Transform rightPoint;
+        //現在踏んでいるポイント情報
+        [SerializeField] private NormalPoint leftPoint;
+        [SerializeField] private NormalPoint rightPoint;
         
+        //上書きされる前のポイント
+        private NormalPoint beforePoint;
+
         public Transform LeftPoint
         {
             set
             {
                 if (leftMove != null && !leftMove.active)
-                    leftPoint = value;
+                {
+                    beforePoint = leftPoint;
+                    leftPoint = value.GetComponent<NormalPoint>();
+                }
             }
             
-            get { return leftPoint; }
+            get { return leftPoint.transform; }
         }
         
         public Transform RightPoint
@@ -40,18 +47,26 @@ namespace Player
             set
             {
                 if (rightMove != null && !rightMove.active)
-                    rightPoint = value;
+                {
+                    beforePoint = rightPoint;
+                    rightPoint = value.GetComponent<NormalPoint>();
+                }
             }
             
-            get { return rightPoint; }
+            get { return rightPoint.transform; }
         }
         
-        //ベジェの座標情報
+        //現在いる座標
         [ShowNativeProperty] public Vector3 LeftPosition { get; private set; }
         [ShowNativeProperty] public Vector3 RightPosition { get; private set; }
-        [NaughtyAttributes.ReadOnly] public Vector3 ControlPoint;
+        [NaughtyAttributes.ReadOnly] public Vector3 ControlPosition;
         
-        [ShowNativeProperty] public Vector3 StandardControlPoint { get; private set; }
+        //基準のコントロール座標
+        [ShowNativeProperty] public Vector3 StandardControlPosition { get; private set; }
+
+        [ShowNonSerializedField] private Vector3 playerNormal;
+
+        
         
         private LineRenderer lineRenderer;
 
@@ -69,7 +84,7 @@ namespace Player
                 if (leftMove == null || !leftMove.active)
                     leftMove = DOVirtual.Vector3(
                         LeftPosition, 
-                        leftPoint.position, MoveSpeed, x => LeftPosition = x);
+                        LeftPoint.position, MoveSpeed, x => LeftPosition = x);
             });
             
             this.ObserveEveryValueChanged(_ => rightPoint).Subscribe(_ =>
@@ -77,7 +92,7 @@ namespace Player
                 if(rightMove == null || !rightMove.active) 
                     rightMove = DOVirtual.Vector3(
                         RightPosition, 
-                        rightPoint.position, MoveSpeed, x => RightPosition = x);
+                        RightPoint.position, MoveSpeed, x => RightPosition = x);
             });
         }
 
@@ -85,14 +100,27 @@ namespace Player
         {
             //ポイントが動いた際に対応
             if (leftMove != null && !leftMove.active)
-                LeftPosition = leftPoint.position;
+                LeftPosition = LeftPoint.position;
             
             if (rightMove != null && !rightMove.active)
-                RightPosition = rightPoint.position;
+                RightPosition = RightPoint.position;
             
             //基準のコントロールポイント更新
             UpdateStandardControlPoint();
             
+            {
+                //座標の更新
+                var center = (LeftPosition - RightPosition) * 0.5f;
+                transform.position = RightPosition + center;
+
+                var vec = (LeftPoint.position - RightPoint.position);
+                var crossz = Vector3.Cross(vec.normalized, playerNormal).z; 
+                if (crossz > 0.0f)
+                {
+                    (leftPoint, rightPoint) = (rightPoint, leftPoint);
+                }
+            }
+
             //線書き換え
             UpdatePoint(lineRenderer, NumPoint);
         }
@@ -103,7 +131,7 @@ namespace Player
             {
                 line.SetPosition(i,
                     CalcBezierCurvePoint(
-                        LeftPosition, RightPosition, ControlPoint, ((float) i) / (numPoint - 1)));
+                        LeftPosition, RightPosition, ControlPosition, ((float) i) / (numPoint - 1)));
             }
         }
 
@@ -118,7 +146,7 @@ namespace Player
         //ベジェカーブの座標を取得する 0.0~1.0
         public Vector3 GetBezierCurvePosition(float t)
         {
-            return CalcBezierCurvePoint(LeftPosition, RightPosition, ControlPoint, t);
+            return CalcBezierCurvePoint(LeftPosition, RightPosition, ControlPosition, t);
         }
 
         public void UpdatePoint()
@@ -135,31 +163,42 @@ namespace Player
             center *= 0.5f;
             
             //法線を確認する
-            Vector3 up = Vector3.zero;
-            
-            //xが同じ場合
-            if (Math.Abs(rightPoint.rotation.x - leftPoint.rotation.x) < 0.0001f)
-            {
-                up.x = rightPoint.rotation.x;
-            }
-            
-            //yが同じ場合
-            if (Math.Abs(rightPoint.rotation.y - leftPoint.rotation.y) < 0.0001f)
-            {
-                up.y = rightPoint.rotation.y;
-            }
+            Vector3 up = CheckNormal(leftPoint, rightPoint);
             
             //設定チェック
             if (up.x == 0.0f && up.y == 0.0f)
             {
-                up = Vector3.Cross(center.normalized, Vector3.forward);
+                up = -Vector3.Cross(center.normalized, Vector3.forward);
             }
-            else if (up.x != 0.0f && up.y != 0.0f)
+            else if(up.x != 0.0f && up.y != 0.0)
             {
                 up.y = 0.0f;
             }
 
-            return (left + center) + (up.normalized * height);
+            playerNormal = up.normalized;
+
+            
+
+            return (left + center) + (playerNormal * height);
+        }
+
+        private Vector3 CheckNormal(NormalPoint a, NormalPoint b)
+        {
+            var up = Vector3.zero;
+            
+            //xが同じ場合
+            if (Math.Abs(a.Normal.x - b.Normal.x) < 0.0001f)
+            {
+                up.x = a.Normal.x;
+            }
+            
+            //yが同じ場合
+            if (Math.Abs(a.Normal.y - b.Normal.y) < 0.0001f)
+            {
+                up.y = b.Normal.y;
+            }
+
+            return up;
         }
 
         public Vector3 CulcControlPoint()
@@ -169,7 +208,7 @@ namespace Player
 
         public void UpdateStandardControlPoint()
         {
-            StandardControlPoint = CulcControlPoint(LeftPosition, RightPosition, ControlHeight);
+            StandardControlPosition = CulcControlPoint(LeftPosition, RightPosition, ControlHeight);
         }
 
         private void OnEnable()
@@ -210,12 +249,12 @@ namespace Player
 
         private void SetStartAndEndPoint(MovePoint movePoint)
         {
-            LeftPosition = leftPoint.position;
-            RightPosition = rightPoint.position;
+            LeftPosition = LeftPoint.position;
+            RightPosition = RightPoint.position;
             
             //コントロールポイントを変更
             UpdateStandardControlPoint();
-            ControlPoint = StandardControlPoint;
+            ControlPosition = StandardControlPosition;
 
             //コントロールオブジェクトの座標を変更
             controllerObject.transform.position = GetBezierCurvePosition(0.5f);
@@ -230,8 +269,8 @@ namespace Player
 
             var movePoint = controllerObject.GetComponent<MovePoint>();
 
-            if ((leftPoint != null && leftPoint.hasChanged) || 
-                (rightPoint != null && rightPoint.hasChanged))
+            if ((leftPoint != null && LeftPoint.hasChanged) || 
+                (rightPoint != null && RightPoint.hasChanged))
             {
                 SetStartAndEndPoint(movePoint);
             }

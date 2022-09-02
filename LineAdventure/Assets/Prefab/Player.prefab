@@ -159,7 +159,7 @@ MonoBehaviour:
   <MoveSpeed>k__BackingField: 0.09
   leftPoint: {fileID: 0}
   rightPoint: {fileID: 0}
-  ControlPoint: {x: -7, y: -1, z: 0}
+  ControlPosition: {x: 0, y: 0, z: 0}
   controllerObject: {fileID: 656973827784183300}
 --- !u!114 &656973827351535322
 MonoBehaviour:
@@ -199,7 +199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656973827784183300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -10,6 +10,8 @@ public class NearbyPoints : MonoBehaviour
 {
     [field: SerializeField] public List<NearbyPoints> nearbyPoints { get; private set; }
     
+    [field: SerializeField] public List<NearbyPoints> WallPoints { get; private set; }
+    
 #if UNITY_EDITOR
     [SerializeField] private float hitRadius = 2.0f;
     

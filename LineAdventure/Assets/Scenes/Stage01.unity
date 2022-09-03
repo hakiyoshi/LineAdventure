@@ -506,6 +506,14 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2730671434634703331, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730671434634703331, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730671434634703331, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8
       objectReference: {fileID: 0}
@@ -1173,9 +1181,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 680868364}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 113181988}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.data[0]
       value: 
@@ -1740,6 +1760,214 @@ PrefabInstance:
       propertyPath: LinePoint.Array.data[51]
       value: 
       objectReference: {fileID: 485947356}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.size
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 485947353}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 680868364}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[2]
+      value: 
+      objectReference: {fileID: 1414625608}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[3]
+      value: 
+      objectReference: {fileID: 113181988}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[4]
+      value: 
+      objectReference: {fileID: 94048913}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[5]
+      value: 
+      objectReference: {fileID: 81737035}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[6]
+      value: 
+      objectReference: {fileID: 1528557528}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[7]
+      value: 
+      objectReference: {fileID: 636710795}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[8]
+      value: 
+      objectReference: {fileID: 2015491639}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[9]
+      value: 
+      objectReference: {fileID: 95025438}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[10]
+      value: 
+      objectReference: {fileID: 21547817}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[11]
+      value: 
+      objectReference: {fileID: 1064922037}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[12]
+      value: 
+      objectReference: {fileID: 1209973292}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[13]
+      value: 
+      objectReference: {fileID: 37081893}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[14]
+      value: 
+      objectReference: {fileID: 1172527554}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[15]
+      value: 
+      objectReference: {fileID: 825474563}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[16]
+      value: 
+      objectReference: {fileID: 214009326}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[17]
+      value: 
+      objectReference: {fileID: 541182883}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[18]
+      value: 
+      objectReference: {fileID: 2134090555}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[19]
+      value: 
+      objectReference: {fileID: 1406980465}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[20]
+      value: 
+      objectReference: {fileID: 1404225548}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[21]
+      value: 
+      objectReference: {fileID: 2097153285}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[22]
+      value: 
+      objectReference: {fileID: 1883607425}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[23]
+      value: 
+      objectReference: {fileID: 824729232}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[24]
+      value: 
+      objectReference: {fileID: 1864180220}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[25]
+      value: 
+      objectReference: {fileID: 603347266}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[26]
+      value: 
+      objectReference: {fileID: 1329745831}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[27]
+      value: 
+      objectReference: {fileID: 1938135120}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[28]
+      value: 
+      objectReference: {fileID: 1646850857}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[29]
+      value: 
+      objectReference: {fileID: 1655140374}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[30]
+      value: 
+      objectReference: {fileID: 1069886617}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[31]
+      value: 
+      objectReference: {fileID: 1313357314}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[32]
+      value: 
+      objectReference: {fileID: 1801215271}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[33]
+      value: 
+      objectReference: {fileID: 1816118283}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[34]
+      value: 
+      objectReference: {fileID: 2036758243}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[35]
+      value: 
+      objectReference: {fileID: 1985081333}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[36]
+      value: 
+      objectReference: {fileID: 2137858411}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[37]
+      value: 
+      objectReference: {fileID: 1835052291}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[38]
+      value: 
+      objectReference: {fileID: 717956267}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[39]
+      value: 
+      objectReference: {fileID: 1588347483}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[40]
+      value: 
+      objectReference: {fileID: 1533528742}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[41]
+      value: 
+      objectReference: {fileID: 1671806934}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[42]
+      value: 
+      objectReference: {fileID: 1233196642}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[43]
+      value: 
+      objectReference: {fileID: 619728083}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[44]
+      value: 
+      objectReference: {fileID: 1579607920}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[45]
+      value: 
+      objectReference: {fileID: 599609038}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[46]
+      value: 
+      objectReference: {fileID: 1657700047}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[47]
+      value: 
+      objectReference: {fileID: 2023800426}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[48]
+      value: 
+      objectReference: {fileID: 1539686836}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[49]
+      value: 
+      objectReference: {fileID: 306659114}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[50]
+      value: 
+      objectReference: {fileID: 485947353}
     - target: {fileID: 8344707375253424849, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
       propertyPath: m_Positions.Array.size
       value: 51
@@ -3582,9 +3810,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 1539686836}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 485947353}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.data[0]
       value: 
@@ -3815,6 +4055,26 @@ PrefabInstance:
       propertyPath: LinePoint.Array.data[6]
       value: 
       objectReference: {fileID: 850484510}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 1461407429}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 165800022}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[2]
+      value: 
+      objectReference: {fileID: 1296260784}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[3]
+      value: 
+      objectReference: {fileID: 383033600}
     - target: {fileID: 8344707375253424849, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
       propertyPath: m_Positions.Array.size
       value: 4
@@ -4018,9 +4278,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 1414625608}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 94048913}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.data[0]
       value: 
@@ -4355,6 +4627,26 @@ PrefabInstance:
       propertyPath: LinePoint.Array.data[6]
       value: 
       objectReference: {fileID: 850484510}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 94048913}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 71048594}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[2]
+      value: 
+      objectReference: {fileID: 1736124971}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[3]
+      value: 
+      objectReference: {fileID: 81737035}
     - target: {fileID: 8344707375253424849, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
       propertyPath: m_Positions.Array.size
       value: 4
@@ -4795,9 +5087,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 485947353}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 1414625608}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.data[0]
       value: 
@@ -5151,7 +5455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2730671434634703331, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 2730671434634703331, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5267,7 +5571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2730671434634703331, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: m_RootOrder
-      value: 47
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 2730671434634703331, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6221,7 +6525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2730671434634703331, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2730671434634703331, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6478,9 +6782,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 113181988}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 81737035}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.data[0]
       value: 
@@ -6512,7 +6828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2730671434634703331, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: m_RootOrder
-      value: 46
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 2730671434634703331, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6784,9 +7100,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 94048913}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 1528557528}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.data[0]
       value: 
@@ -6869,9 +7197,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
+      propertyPath: <WallPoints>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 680868364}
     - target: {fileID: 4159122143153860936, guid: 419c3b271d909be4aad51e52169fd760, type: 3}
       propertyPath: <nearbyPoints>k__BackingField.Array.data[0]
       value: 
@@ -7036,9 +7372,21 @@ PrefabInstance:
       propertyPath: LinePoint.Array.data[6]
       value: 
       objectReference: {fileID: 850484510}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 2030148806}
+    - target: {fileID: 8344707375253424848, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
+      propertyPath: <LinePoint>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 636710795}
     - target: {fileID: 8344707375253424849, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
       propertyPath: m_Positions.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8344707375253424849, guid: 01d623cb94f552b42a0c46ba8756af73, type: 3}
       propertyPath: m_Positions.Array.data[0].x

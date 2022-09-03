@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using NaughtyAttributes;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
-#if UNITY_EDITOR
 namespace Stage
 {
     [ExecuteInEditMode]
@@ -14,16 +14,20 @@ namespace Stage
     public class LineConnectiion : MonoBehaviour
     {
 
-        [SerializeField]private List<Transform> LinePoint;
+        [field: SerializeField]public List<NearbyPoints> LinePoint { get; private set; }
 
         private void OnEnable()
         {
+            #if UNITY_EDITOR
             EditorApplication.update += UpdateLinePoint;
+            #endif
         }
 
         private void OnDisable()
         {
+            #if UNITY_EDITOR
             EditorApplication.update -= UpdateLinePoint;
+            #endif
         }
 
         private void UpdateLinePoint()
@@ -41,6 +45,17 @@ namespace Stage
             
             //線設定
             SetLine(line);
+            
+            //壁ポイントを追加
+            for (int i = 0; i < LinePoint.Count; i++)
+            {
+                var point = LinePoint[i];
+                if(i > 0 && !point.WallPoints.Contains(LinePoint[i - 1]) && point != LinePoint[i - 1])
+                    point.WallPoints.Add(LinePoint[i - 1]);
+                
+                if(i < LinePoint.Count - 1 && !point.WallPoints.Contains(LinePoint[i + 1]) && point != LinePoint[i + 1])
+                    point.WallPoints.Add(LinePoint[i + 1]);
+            }
             
             SceneView.RepaintAll();
         }
@@ -64,13 +79,14 @@ namespace Stage
             LinePoint.Clear();
             foreach (Transform child in transform)
             {
-                LinePoint.Add(child);
+                LinePoint.Add(child.GetComponent<NearbyPoints>());
             }
             
             SetLine(GetComponent<LineRenderer>());
+            
+            
             
             SceneView.RepaintAll();
         }
     }
 }
-#endif

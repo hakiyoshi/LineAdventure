@@ -40,24 +40,35 @@ public class MovePoint : MonoBehaviour
 
     private Transform RightNearPointCheck(Vector3 moveVec)
     {
+        return NearPointCheck(moveVec, lineCurve.RightPoint, lineCurve.LeftPoint);
+    }
+
+    private Transform LeftNearPointCheck(Vector3 moveVec)
+    {
+        return NearPointCheck(moveVec, lineCurve.LeftPoint, lineCurve.RightPoint);
+    }
+
+    private Transform NearPointCheck(Vector3 moveVec, Transform a, Transform b)
+    {
         Transform nearPoint = null;
         float nearDot = 0.0f;
-        
-        //右チェック
-        NearbyPoints nearbyPoints = lineCurve.RightPoint.GetComponent<NearbyPoints>();
+
+        //左足チェック
+        NearbyPoints nearbyPoints = a.GetComponent<NearbyPoints>();
         
         foreach (var point in nearbyPoints.nearbyPoints)
         {
-            //反対側と同じ場合何もしない
-            if(point.transform.position == lineCurve.LeftPoint.position || 
+            //左右入れ替え防止
+            if(point.transform.position == b.position || 
                point.transform == nearPoint)
                 continue;
 
             //移動方向とポイントへの方向ベクトルで一番近い物を選ぶ
             var dot = Vector3.Dot(
-                moveVec.normalized, (point.transform.position - lineCurve.RightPoint.position).normalized);
-            if (dot > nearDot)
+                moveVec.normalized, (point.transform.position - a.position).normalized);
+            if (dot > nearDot && CheckMove(nearbyPoints, point))
             {
+                CheckMove(nearbyPoints, point);
                 nearPoint = point.transform;
                 nearDot = dot;
             }
@@ -65,8 +76,9 @@ public class MovePoint : MonoBehaviour
             {
                 if(nearPoint != null && 
                    point.transform.position == nearPoint.position && 
-                   point.transform.rotation == lineCurve.RightPoint.rotation)
+                   point.transform.rotation == a.rotation && CheckMove(nearbyPoints, point))
                 {
+                    CheckMove(nearbyPoints, point);
                     nearPoint = point.transform;
                     nearDot = dot;
                 }
@@ -75,43 +87,32 @@ public class MovePoint : MonoBehaviour
 
         return nearPoint;
     }
-
-    private Transform LeftNearPointCheck(Vector3 moveVec)
+    
+    //移動可能かチェックする
+    private bool CheckMove(NearbyPoints basePoint, NearbyPoints movePoint)
     {
-        Transform nearPoint = null;
-        float nearDot = 0.0f;
-
-        //左足チェック
-        NearbyPoints nearbyPoints = lineCurve.LeftPoint.GetComponent<NearbyPoints>();
+        var basePosi = basePoint.transform.position;
         
-        foreach (var point in nearbyPoints.nearbyPoints)
+        foreach (var wallPoint in basePoint.WallPoints)
         {
-            //左右入れ替え防止
-            if(point.transform.position == lineCurve.RightPoint.position || 
-               point.transform == nearPoint)
+            //ベクトル
+            var moveVec = movePoint.transform.position - basePosi;
+            var playerVec = lineCurve.StandardControlPosition - basePosi;
+            var wallVec = wallPoint.transform.position - basePosi;
+            
+            //内積
+            var playerCross = Vector3.Cross(wallVec.normalized, playerVec.normalized);
+            var moveCross = Vector3.Cross(wallVec.normalized, moveVec.normalized);
+            
+            //お互いの富豪が違う場合壁を挟んでいる
+            if(Mathf.Approximately(playerCross.z, 0.0f) || Mathf.Approximately(moveCross.z, 0.0f))
                 continue;
-
-            //移動方向とポイントへの方向ベクトルで一番近い物を選ぶ
-            var dot = Vector3.Dot(
-                moveVec.normalized, (point.transform.position - lineCurve.LeftPoint.position).normalized);
-            if (dot > nearDot)
-            {
-                nearPoint = point.transform;
-                nearDot = dot;
-            }
-            else if (dot == nearDot)
-            {
-                if(nearPoint != null && 
-                   point.transform.position == nearPoint.position && 
-                   point.transform.rotation == lineCurve.LeftPoint.rotation)
-                {
-                    nearPoint = point.transform;
-                    nearDot = dot;
-                }
-            }
+            
+            if (!Mathf.Approximately(Math.Sign(playerCross.z), Math.Sign(moveCross.z)))
+                return false;
         }
 
-        return nearPoint;
+        return true;
     }
 
     private void SwapRightPoint(Transform point)

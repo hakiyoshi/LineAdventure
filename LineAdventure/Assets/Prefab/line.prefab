@@ -142,4 +142,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f093dc198a6e18b42844ec3c4a691800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LinePoint: []
+  <LinePoint>k__BackingField: []

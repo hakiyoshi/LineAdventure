@@ -72,7 +72,7 @@ public class MovePoint : MonoBehaviour
                 nearPoint = point.transform;
                 nearDot = dot;
             }
-            else if (dot == nearDot)
+            else if (Mathf.Approximately(dot, nearDot))
             {
                 if(nearPoint != null && 
                    point.transform.position == nearPoint.position && 

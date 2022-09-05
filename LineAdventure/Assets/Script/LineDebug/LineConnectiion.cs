@@ -7,6 +7,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 namespace Stage
 {
     [ExecuteInEditMode]
@@ -50,14 +51,17 @@ namespace Stage
             for (int i = 0; i < LinePoint.Count; i++)
             {
                 var point = LinePoint[i];
+                //一個手前のポイントを追加
                 if(i > 0 && !point.WallPoints.Contains(LinePoint[i - 1]) && point != LinePoint[i - 1])
                     point.WallPoints.Add(LinePoint[i - 1]);
                 
+                //一個先のポイントを追加
                 if(i < LinePoint.Count - 1 && !point.WallPoints.Contains(LinePoint[i + 1]) && point != LinePoint[i + 1])
                     point.WallPoints.Add(LinePoint[i + 1]);
             }
             
             SceneView.RepaintAll();
+            
         }
 
         private void OnValidate()
@@ -90,3 +94,4 @@ namespace Stage
         }
     }
 }
+#endif

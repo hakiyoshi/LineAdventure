@@ -448,6 +448,10 @@ PrefabInstance:
       propertyPath: ControlPosition.z
       value: -0.07862738
       objectReference: {fileID: 0}
+    - target: {fileID: 656973827784183322, guid: a8a3ad18740f92b438742907b36e57b2, type: 3}
+      propertyPath: lineLength
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 656973827784183323, guid: a8a3ad18740f92b438742907b36e57b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

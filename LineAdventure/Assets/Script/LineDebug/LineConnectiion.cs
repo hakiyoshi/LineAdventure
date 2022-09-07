@@ -47,6 +47,27 @@ namespace Stage
             //線設定
             SetLine(line);
             
+            SetWallPoint();
+            
+            SceneView.RepaintAll();
+            
+        }
+
+        private void OnValidate()
+        {
+            if(!EditorApplication.isPlaying)
+            {
+                foreach (var point in LinePoint)
+                {
+                    point.WallPoints.Clear();
+                }
+            }
+
+            UpdateLinePoint();
+        }
+
+        private void SetWallPoint()
+        {
             //壁ポイントを追加
             for (int i = 0; i < LinePoint.Count; i++)
             {
@@ -59,14 +80,6 @@ namespace Stage
                 if(i < LinePoint.Count - 1 && !point.WallPoints.Contains(LinePoint[i + 1]) && point != LinePoint[i + 1])
                     point.WallPoints.Add(LinePoint[i + 1]);
             }
-            
-            SceneView.RepaintAll();
-            
-        }
-
-        private void OnValidate()
-        {
-            UpdateLinePoint();
         }
 
         private void SetLine(LineRenderer line)
@@ -80,6 +93,11 @@ namespace Stage
         [Button]
         private void SetLinePoint()
         {
+            foreach (var point in LinePoint)
+            {
+                point.WallPoints.Clear();
+            }
+            
             LinePoint.Clear();
             foreach (Transform child in transform)
             {

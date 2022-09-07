@@ -18,10 +18,14 @@ public class MovePoint : MonoBehaviour
         {
             var right = RightNearPointCheck(x);
             var left = LeftNearPointCheck(x);
+
             
-            if (x.x < 0.0f)
+            var rlength = right != null ? (right.position - lineCurve.ControlPosition).sqrMagnitude : 100000.0f;
+            var llength = left != null ? (left.position - lineCurve.ControlPosition).sqrMagnitude : 100000.0f;
+            
+            //現在の座標から近いほうを優先
+            if (llength <= rlength)
             {
-                //左に移動している場合左優先
                 if(left != null)
                     SwapLeftPoint(left);
                 else
@@ -29,7 +33,6 @@ public class MovePoint : MonoBehaviour
             }
             else
             {
-                //右に移動している場合右優先
                 if (right != null)
                     SwapRightPoint(right);
                 else
@@ -66,9 +69,10 @@ public class MovePoint : MonoBehaviour
             //移動方向とポイントへの方向ベクトルで一番近い物を選ぶ
             var dot = Vector3.Dot(
                 moveVec.normalized, (point.transform.position - a.position).normalized);
+
             if (dot > nearDot && CheckMove(nearbyPoints, point))
             {
-                //CheckMove(nearbyPoints, point);
+                CheckMove(nearbyPoints, point);
                 nearPoint = point.transform;
                 nearDot = dot;
             }
@@ -78,7 +82,7 @@ public class MovePoint : MonoBehaviour
                    point.transform.position == nearPoint.position && 
                    point.transform.rotation == a.rotation && CheckMove(nearbyPoints, point))
                 {
-                    //CheckMove(nearbyPoints, point);
+                    CheckMove(nearbyPoints, point);
                     nearPoint = point.transform;
                     nearDot = dot;
                 }

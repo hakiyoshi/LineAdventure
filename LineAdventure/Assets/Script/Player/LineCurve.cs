@@ -36,6 +36,7 @@ namespace Player
                 {
                     beforePoint = leftPoint;
                     leftPoint = value.GetComponent<NormalPoint>();
+                    
                 }
             }
             
@@ -168,6 +169,7 @@ namespace Player
             //設定チェック
             if (up.x == 0.0f && up.y == 0.0f)
             {
+                //上方向求める
                 up = -Vector3.Cross(center.normalized, Vector3.forward);
             }
             else if(up.x != 0.0f && up.y != 0.0)

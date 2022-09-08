@@ -1,9 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using Player;
-using Unity.VisualScripting;
 using UnityEngine;
 using UniRx;
 
@@ -38,7 +33,7 @@ public class MovePoint : MonoBehaviour
                 else
                     SwapLeftPoint(left);
             }
-        });
+        }).AddTo(this);
     }
 
     private Transform RightNearPointCheck(Vector3 moveVec)

@@ -19,6 +19,8 @@ namespace Player
 
         [SerializeField] private PlayerEvent playerEvent;
 
+        [SerializeField] private GameState gameState;
+
         private void OnValidate()
         {
             transform.position = lineCurve.GetBezierCurvePosition(0.5f);
@@ -27,25 +29,28 @@ namespace Player
         private void Update()
         {
             //キー入力
-            Vector3 inputMove = new Vector3();
-            if (Keyboard.current.aKey.isPressed)
+            Vector3 inputMove = Vector3.zero;
+            if (gameState.state == GameState.State.Game)
             {
-                inputMove.x -= 1.0f;
-            }
+                if (Keyboard.current.aKey.isPressed)
+                {
+                    inputMove.x -= 1.0f;
+                }
 
-            if (Keyboard.current.dKey.isPressed)
-            {
-                inputMove.x += 1.0f;
-            }
+                if (Keyboard.current.dKey.isPressed)
+                {
+                    inputMove.x += 1.0f;
+                }
 
-            if (Keyboard.current.wKey.isPressed)
-            {
-                inputMove.y += 1.0f;
-            }
+                if (Keyboard.current.wKey.isPressed)
+                {
+                    inputMove.y += 1.0f;
+                }
 
-            if (Keyboard.current.sKey.isPressed)
-            {
-                inputMove.y -= 1.0f;
+                if (Keyboard.current.sKey.isPressed)
+                {
+                    inputMove.y -= 1.0f;
+                }
             }
             
             //移動ベクトル計算

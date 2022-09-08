@@ -223,6 +223,7 @@ MonoBehaviour:
   lineLength: 1
   returnForce: 10
   playerEvent: {fileID: 11400000, guid: 8eb688f685d85684db10e67e421fd5c0, type: 2}
+  gameState: {fileID: 11400000, guid: bcf9b6d5aec7d934885b6b9e72d4ffa9, type: 2}
 --- !u!114 &656973827784183320
 MonoBehaviour:
   m_ObjectHideFlags: 0

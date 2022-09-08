@@ -1,13 +1,9 @@
 using System;
-using System.ComponentModel;
-using System.Numerics;
 using DG.Tweening;
 using NaughtyAttributes;
 using UniRx;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Serialization;
-using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
 namespace Player
@@ -75,7 +71,7 @@ namespace Player
         private Tweener rightMove;
 
         // Start is called before the first frame update
-        private void Start()
+        private void Awake()
         {
             TryGetComponent(out lineRenderer);
             lineRenderer.positionCount = NumPoint;
@@ -86,7 +82,7 @@ namespace Player
                     leftMove = DOVirtual.Vector3(
                         LeftPosition, 
                         LeftPoint.position, MoveSpeed, x => LeftPosition = x);
-            });
+            }).AddTo(this);
             
             this.ObserveEveryValueChanged(_ => rightPoint).Subscribe(_ =>
             {
@@ -94,7 +90,7 @@ namespace Player
                     rightMove = DOVirtual.Vector3(
                         RightPosition, 
                         RightPoint.position, MoveSpeed, x => RightPosition = x);
-            });
+            }).AddTo(this);
         }
 
         private void LateUpdate()
@@ -244,12 +240,11 @@ namespace Player
             
             if(leftPoint != null && rightPoint != null)
             {
-                var movePoint = controllerObject.GetComponent<MovePoint>();
-                SetStartAndEndPoint(movePoint);
+                SetStartAndEndPoint();
             }
         }
 
-        private void SetStartAndEndPoint(MovePoint movePoint)
+        private void SetStartAndEndPoint()
         {
             LeftPosition = LeftPoint.position;
             RightPosition = RightPoint.position;
@@ -268,13 +263,11 @@ namespace Player
         {
             if (EditorApplication.isPlaying)
                 return;
-
-            var movePoint = controllerObject.GetComponent<MovePoint>();
-
+            
             if ((leftPoint != null && LeftPoint.hasChanged) || 
                 (rightPoint != null && RightPoint.hasChanged))
             {
-                SetStartAndEndPoint(movePoint);
+                SetStartAndEndPoint();
             }
         }
 #endif

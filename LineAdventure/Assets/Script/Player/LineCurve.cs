@@ -133,10 +133,10 @@ namespace Player
 
         private static Vector3 CalcBezierCurvePoint(Vector3 start, Vector3 end, Vector3 control, float t)
         {
-            var sc = Vector3.Lerp(start, control, t);
-            var ce = Vector3.Lerp(control, end, t);
-            var bezier = Vector3.Lerp(sc, ce, t);
-            return bezier;
+            var oneMinusTime = 1.0f - t;
+            return oneMinusTime * oneMinusTime * start +
+                   2.0f * oneMinusTime * t * control +
+                   t * t * end;
         }
 
         //ベジェカーブの座標を取得する 0.0~1.0

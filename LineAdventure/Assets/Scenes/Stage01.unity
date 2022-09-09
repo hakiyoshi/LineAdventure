@@ -3641,9 +3641,9 @@ MonoBehaviour:
   - {fileID: 1311829376}
   - {fileID: 1782906703}
   <WallPoints>k__BackingField:
+  - {fileID: 331097128}
   - {fileID: 1311829376}
   - {fileID: 1782906703}
-  - {fileID: 331097128}
   hitRadius: 2
 --- !u!114 &524593812
 MonoBehaviour:
@@ -6044,7 +6044,6 @@ MonoBehaviour:
   <nearbyPoints>k__BackingField:
   - {fileID: 1493327790}
   - {fileID: 2044024699}
-  - {fileID: 342838025}
   <WallPoints>k__BackingField:
   - {fileID: 2044024699}
   hitRadius: 2
@@ -6143,6 +6142,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 167407106}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1078959335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1078959337}
+  - component: {fileID: 1078959336}
+  m_Layer: 0
+  m_Name: exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1078959336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078959335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16c8e3da01196a4785a18654b693238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1078959337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078959335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.204472, y: -1.0270903, z: -0.035499897}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1160601340
 GameObject:
@@ -18805,9 +18848,9 @@ MonoBehaviour:
   - {fileID: 1431640914}
   - {fileID: 4159122142900645830}
   <WallPoints>k__BackingField:
-  - {fileID: 1431640914}
   - {fileID: 4159122142900645830}
   - {fileID: 4159122144227516214}
+  - {fileID: 1431640914}
   hitRadius: 2
 --- !u!114 &4159122143493860005
 MonoBehaviour:
@@ -19166,9 +19209,9 @@ MonoBehaviour:
   - {fileID: 4159122142990852592}
   - {fileID: 4159122144709514017}
   <WallPoints>k__BackingField:
+  - {fileID: 4159122142990852592}
   - {fileID: 4159122144709514017}
   - {fileID: 4159122144170408648}
-  - {fileID: 4159122142990852592}
   hitRadius: 2
 --- !u!114 &4159122144085300651
 MonoBehaviour:
@@ -19321,9 +19364,9 @@ MonoBehaviour:
   - {fileID: 1764833767}
   - {fileID: 4159122144675077098}
   <WallPoints>k__BackingField:
+  - {fileID: 1764833767}
   - {fileID: 4159122143051958144}
   - {fileID: 4159122144675077098}
-  - {fileID: 1764833767}
   hitRadius: 2
 --- !u!114 &4159122144392333430
 MonoBehaviour:

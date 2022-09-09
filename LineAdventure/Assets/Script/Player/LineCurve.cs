@@ -4,7 +4,6 @@ using NaughtyAttributes;
 using UniRx;
 using UnityEditor;
 using UnityEngine;
-using Vector3 = UnityEngine.Vector3;
 
 namespace Player
 {

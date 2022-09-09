@@ -1,8 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using DG.Tweening;
-using UniRx;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -30,7 +25,7 @@ namespace Player
         {
             //キー入力
             Vector3 inputMove = Vector3.zero;
-            if (gameState.state == GameState.State.Game)
+            if (gameState.state == GameState.State.Game || gameState.state == GameState.State.Title)
             {
                 if (Keyboard.current.aKey.isPressed)
                 {

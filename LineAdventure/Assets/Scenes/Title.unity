@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 39186056}
   - component: {fileID: 39186055}
-  - component: {fileID: 39186054}
   - component: {fileID: 39186052}
   - component: {fileID: 39186053}
   m_Layer: 0
@@ -175,22 +174,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: -1, y: 0, z: 0}
---- !u!58 &39186054
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 39186051}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &39186055
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -268,7 +251,6 @@ GameObject:
   m_Component:
   - component: {fileID: 39335941}
   - component: {fileID: 39335940}
-  - component: {fileID: 39335939}
   - component: {fileID: 39335937}
   - component: {fileID: 39335938}
   m_Layer: 0
@@ -310,22 +292,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &39335939
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 39335936}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &39335940
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -403,7 +369,6 @@ GameObject:
   m_Component:
   - component: {fileID: 66645405}
   - component: {fileID: 66645404}
-  - component: {fileID: 66645403}
   - component: {fileID: 66645401}
   - component: {fileID: 66645402}
   m_Layer: 0
@@ -445,22 +410,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 1, y: 0, z: 0}
---- !u!58 &66645403
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66645400}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &66645404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -538,7 +487,6 @@ GameObject:
   m_Component:
   - component: {fileID: 107376164}
   - component: {fileID: 107376163}
-  - component: {fileID: 107376162}
   - component: {fileID: 107376160}
   - component: {fileID: 107376161}
   m_Layer: 0
@@ -580,22 +528,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &107376162
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107376159}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &107376163
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -808,7 +740,6 @@ GameObject:
   m_Component:
   - component: {fileID: 195831521}
   - component: {fileID: 195831520}
-  - component: {fileID: 195831519}
   - component: {fileID: 195831517}
   - component: {fileID: 195831518}
   m_Layer: 0
@@ -850,22 +781,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &195831519
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 195831516}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &195831520
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -943,7 +858,6 @@ GameObject:
   m_Component:
   - component: {fileID: 235134267}
   - component: {fileID: 235134266}
-  - component: {fileID: 235134265}
   - component: {fileID: 235134263}
   - component: {fileID: 235134264}
   m_Layer: 0
@@ -985,22 +899,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: -1, y: 0, z: 0}
---- !u!58 &235134265
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 235134262}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &235134266
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1078,7 +976,6 @@ GameObject:
   m_Component:
   - component: {fileID: 271438799}
   - component: {fileID: 271438798}
-  - component: {fileID: 271438797}
   - component: {fileID: 271438795}
   - component: {fileID: 271438796}
   m_Layer: 0
@@ -1120,22 +1017,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: -1, y: 0, z: 0}
---- !u!58 &271438797
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 271438794}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &271438798
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1213,7 +1094,6 @@ GameObject:
   m_Component:
   - component: {fileID: 296154292}
   - component: {fileID: 296154291}
-  - component: {fileID: 296154290}
   - component: {fileID: 296154288}
   - component: {fileID: 296154289}
   m_Layer: 0
@@ -1255,22 +1135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 1, y: 0, z: 0}
---- !u!58 &296154290
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296154287}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &296154291
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1348,7 +1212,6 @@ GameObject:
   m_Component:
   - component: {fileID: 299073105}
   - component: {fileID: 299073104}
-  - component: {fileID: 299073103}
   - component: {fileID: 299073101}
   - component: {fileID: 299073102}
   m_Layer: 0
@@ -1390,22 +1253,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &299073103
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299073100}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &299073104
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1483,7 +1330,6 @@ GameObject:
   m_Component:
   - component: {fileID: 308189800}
   - component: {fileID: 308189799}
-  - component: {fileID: 308189798}
   - component: {fileID: 308189796}
   - component: {fileID: 308189797}
   m_Layer: 0
@@ -1525,22 +1371,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &308189798
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 308189795}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &308189799
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1618,7 +1448,6 @@ GameObject:
   m_Component:
   - component: {fileID: 326977218}
   - component: {fileID: 326977217}
-  - component: {fileID: 326977216}
   - component: {fileID: 326977214}
   - component: {fileID: 326977215}
   m_Layer: 0
@@ -1660,22 +1489,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &326977216
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326977213}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &326977217
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1753,7 +1566,6 @@ GameObject:
   m_Component:
   - component: {fileID: 401450611}
   - component: {fileID: 401450610}
-  - component: {fileID: 401450609}
   - component: {fileID: 401450607}
   - component: {fileID: 401450608}
   m_Layer: 0
@@ -1795,22 +1607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 1, y: 0, z: 0}
---- !u!58 &401450609
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401450606}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &401450610
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1888,7 +1684,6 @@ GameObject:
   m_Component:
   - component: {fileID: 401605324}
   - component: {fileID: 401605323}
-  - component: {fileID: 401605322}
   - component: {fileID: 401605320}
   - component: {fileID: 401605321}
   m_Layer: 0
@@ -1930,22 +1725,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &401605322
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401605319}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &401605323
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2107,7 +1886,6 @@ GameObject:
   m_Component:
   - component: {fileID: 449366214}
   - component: {fileID: 449366213}
-  - component: {fileID: 449366212}
   - component: {fileID: 449366210}
   - component: {fileID: 449366211}
   m_Layer: 0
@@ -2149,22 +1927,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 1, y: 0, z: 0}
---- !u!58 &449366212
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449366209}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &449366213
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2326,7 +2088,6 @@ GameObject:
   m_Component:
   - component: {fileID: 496482537}
   - component: {fileID: 496482536}
-  - component: {fileID: 496482535}
   - component: {fileID: 496482533}
   - component: {fileID: 496482534}
   m_Layer: 0
@@ -2368,22 +2129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 1, y: 0, z: 0}
---- !u!58 &496482535
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496482532}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &496482536
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2461,7 +2206,6 @@ GameObject:
   m_Component:
   - component: {fileID: 500806496}
   - component: {fileID: 500806495}
-  - component: {fileID: 500806494}
   - component: {fileID: 500806492}
   - component: {fileID: 500806493}
   m_Layer: 0
@@ -2503,22 +2247,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &500806494
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500806491}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &500806495
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2596,7 +2324,6 @@ GameObject:
   m_Component:
   - component: {fileID: 509038274}
   - component: {fileID: 509038273}
-  - component: {fileID: 509038272}
   - component: {fileID: 509038270}
   - component: {fileID: 509038271}
   m_Layer: 0
@@ -2638,22 +2365,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &509038272
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 509038269}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &509038273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2731,7 +2442,6 @@ GameObject:
   m_Component:
   - component: {fileID: 558554728}
   - component: {fileID: 558554727}
-  - component: {fileID: 558554726}
   - component: {fileID: 558554724}
   - component: {fileID: 558554725}
   m_Layer: 0
@@ -2773,22 +2483,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &558554726
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558554723}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &558554727
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2866,7 +2560,6 @@ GameObject:
   m_Component:
   - component: {fileID: 567477453}
   - component: {fileID: 567477452}
-  - component: {fileID: 567477451}
   - component: {fileID: 567477449}
   - component: {fileID: 567477450}
   m_Layer: 0
@@ -2908,22 +2601,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: -1, y: 0, z: 0}
---- !u!58 &567477451
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567477448}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &567477452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3001,7 +2678,6 @@ GameObject:
   m_Component:
   - component: {fileID: 596581256}
   - component: {fileID: 596581255}
-  - component: {fileID: 596581254}
   - component: {fileID: 596581252}
   - component: {fileID: 596581253}
   m_Layer: 0
@@ -3043,22 +2719,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: -1, y: 0, z: 0}
---- !u!58 &596581254
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596581251}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &596581255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3136,7 +2796,6 @@ GameObject:
   m_Component:
   - component: {fileID: 618985152}
   - component: {fileID: 618985151}
-  - component: {fileID: 618985150}
   - component: {fileID: 618985148}
   - component: {fileID: 618985149}
   m_Layer: 0
@@ -3178,22 +2837,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &618985150
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618985147}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &618985151
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3271,7 +2914,6 @@ GameObject:
   m_Component:
   - component: {fileID: 737463119}
   - component: {fileID: 737463118}
-  - component: {fileID: 737463117}
   - component: {fileID: 737463115}
   - component: {fileID: 737463116}
   m_Layer: 0
@@ -3313,22 +2955,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &737463117
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737463114}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &737463118
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3707,7 +3333,6 @@ GameObject:
   m_Component:
   - component: {fileID: 789323376}
   - component: {fileID: 789323375}
-  - component: {fileID: 789323374}
   - component: {fileID: 789323372}
   - component: {fileID: 789323373}
   m_Layer: 0
@@ -3749,22 +3374,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &789323374
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789323371}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &789323375
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3970,7 +3579,7 @@ MonoBehaviour:
   - {fileID: 1272555597}
   - {fileID: 823594973}
   - {fileID: 423168353}
-  playerEvent: {fileID: 11400000, guid: 8eb688f685d85684db10e67e421fd5c0, type: 2}
+  playerEvent: {fileID: 11400000, guid: 21a2c7140d580be4b80a3f4ecff44275, type: 2}
 --- !u!1 &827735783
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,7 +3590,6 @@ GameObject:
   m_Component:
   - component: {fileID: 827735788}
   - component: {fileID: 827735787}
-  - component: {fileID: 827735786}
   - component: {fileID: 827735784}
   - component: {fileID: 827735785}
   m_Layer: 0
@@ -4023,22 +3631,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 1, y: 0, z: 0}
---- !u!58 &827735786
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827735783}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &827735787
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4116,7 +3708,6 @@ GameObject:
   m_Component:
   - component: {fileID: 882796408}
   - component: {fileID: 882796407}
-  - component: {fileID: 882796406}
   - component: {fileID: 882796404}
   - component: {fileID: 882796405}
   m_Layer: 0
@@ -4158,22 +3749,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &882796406
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 882796403}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &882796407
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4251,7 +3826,6 @@ GameObject:
   m_Component:
   - component: {fileID: 936344136}
   - component: {fileID: 936344135}
-  - component: {fileID: 936344134}
   - component: {fileID: 936344132}
   - component: {fileID: 936344133}
   m_Layer: 0
@@ -4293,22 +3867,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: -1, y: 0, z: 0}
---- !u!58 &936344134
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 936344131}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &936344135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4386,7 +3944,6 @@ GameObject:
   m_Component:
   - component: {fileID: 936425873}
   - component: {fileID: 936425872}
-  - component: {fileID: 936425871}
   - component: {fileID: 936425869}
   - component: {fileID: 936425870}
   m_Layer: 0
@@ -4428,22 +3985,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 1, y: 0, z: 0}
---- !u!58 &936425871
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 936425868}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &936425872
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4521,7 +4062,6 @@ GameObject:
   m_Component:
   - component: {fileID: 956023462}
   - component: {fileID: 956023461}
-  - component: {fileID: 956023460}
   - component: {fileID: 956023458}
   - component: {fileID: 956023459}
   m_Layer: 0
@@ -4563,22 +4103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &956023460
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956023457}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &956023461
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4656,7 +4180,6 @@ GameObject:
   m_Component:
   - component: {fileID: 993091144}
   - component: {fileID: 993091143}
-  - component: {fileID: 993091142}
   - component: {fileID: 993091140}
   - component: {fileID: 993091141}
   m_Layer: 0
@@ -4698,22 +4221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 1, y: 1, z: 0}
---- !u!58 &993091142
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993091139}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &993091143
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4791,7 +4298,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1000978992}
   - component: {fileID: 1000978991}
-  - component: {fileID: 1000978990}
   - component: {fileID: 1000978988}
   - component: {fileID: 1000978989}
   m_Layer: 0
@@ -4833,22 +4339,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &1000978990
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000978987}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1000978991
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5068,7 +4558,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1006964796}
   - component: {fileID: 1006964795}
-  - component: {fileID: 1006964794}
   - component: {fileID: 1006964792}
   - component: {fileID: 1006964793}
   m_Layer: 0
@@ -5110,22 +4599,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &1006964794
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006964791}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1006964795
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5466,7 +4939,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1233273663}
   - component: {fileID: 1233273662}
-  - component: {fileID: 1233273661}
   - component: {fileID: 1233273659}
   - component: {fileID: 1233273660}
   m_Layer: 0
@@ -5508,22 +4980,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: -1, y: 0, z: 0}
---- !u!58 &1233273661
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1233273658}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1233273662
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5601,7 +5057,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1256153618}
   - component: {fileID: 1256153617}
-  - component: {fileID: 1256153616}
   - component: {fileID: 1256153614}
   - component: {fileID: 1256153615}
   m_Layer: 0
@@ -5643,22 +5098,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &1256153616
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1256153613}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1256153617
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5820,7 +5259,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1384694826}
   - component: {fileID: 1384694825}
-  - component: {fileID: 1384694824}
   - component: {fileID: 1384694822}
   - component: {fileID: 1384694823}
   m_Layer: 0
@@ -5862,22 +5300,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &1384694824
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384694821}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1384694825
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5955,7 +5377,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1450530536}
   - component: {fileID: 1450530535}
-  - component: {fileID: 1450530534}
   - component: {fileID: 1450530532}
   - component: {fileID: 1450530533}
   m_Layer: 0
@@ -5997,22 +5418,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &1450530534
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450530531}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1450530535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6090,7 +5495,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1455284916}
   - component: {fileID: 1455284915}
-  - component: {fileID: 1455284914}
   - component: {fileID: 1455284912}
   - component: {fileID: 1455284913}
   m_Layer: 0
@@ -6132,22 +5536,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &1455284914
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1455284911}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1455284915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6225,7 +5613,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1495837984}
   - component: {fileID: 1495837983}
-  - component: {fileID: 1495837982}
   - component: {fileID: 1495837980}
   - component: {fileID: 1495837981}
   m_Layer: 0
@@ -6267,22 +5654,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &1495837982
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495837979}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1495837983
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6360,7 +5731,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1502151140}
   - component: {fileID: 1502151139}
-  - component: {fileID: 1502151138}
   - component: {fileID: 1502151136}
   - component: {fileID: 1502151137}
   m_Layer: 0
@@ -6402,22 +5772,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &1502151138
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502151135}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1502151139
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6495,7 +5849,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1519526343}
   - component: {fileID: 1519526342}
-  - component: {fileID: 1519526341}
   - component: {fileID: 1519526339}
   - component: {fileID: 1519526340}
   m_Layer: 0
@@ -6537,22 +5890,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: -1, y: 0, z: 0}
---- !u!58 &1519526341
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519526338}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1519526342
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6715,7 +6052,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1599881595}
   - component: {fileID: 1599881594}
-  - component: {fileID: 1599881593}
   - component: {fileID: 1599881591}
   - component: {fileID: 1599881592}
   m_Layer: 0
@@ -6757,22 +6093,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &1599881593
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599881590}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1599881594
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6850,7 +6170,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1659490783}
   - component: {fileID: 1659490782}
-  - component: {fileID: 1659490781}
   - component: {fileID: 1659490779}
   - component: {fileID: 1659490780}
   m_Layer: 0
@@ -6892,22 +6211,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &1659490781
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659490778}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1659490782
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7087,7 +6390,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1735953327}
   - component: {fileID: 1735953326}
-  - component: {fileID: 1735953325}
   - component: {fileID: 1735953323}
   - component: {fileID: 1735953324}
   m_Layer: 0
@@ -7129,22 +6431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: -1, y: -1, z: 0}
---- !u!58 &1735953325
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735953322}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1735953326
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7222,7 +6508,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1795355004}
   - component: {fileID: 1795355003}
-  - component: {fileID: 1795355002}
   - component: {fileID: 1795355000}
   - component: {fileID: 1795355001}
   m_Layer: 0
@@ -7264,22 +6549,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 1, y: 0, z: 0}
---- !u!58 &1795355002
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795354999}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1795355003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7357,7 +6626,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1939287115}
   - component: {fileID: 1939287114}
-  - component: {fileID: 1939287113}
   - component: {fileID: 1939287111}
   - component: {fileID: 1939287112}
   m_Layer: 0
@@ -7399,22 +6667,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &1939287113
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939287110}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1939287114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7492,7 +6744,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1951837256}
   - component: {fileID: 1951837255}
-  - component: {fileID: 1951837254}
   - component: {fileID: 1951837252}
   - component: {fileID: 1951837253}
   m_Layer: 0
@@ -7534,22 +6785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &1951837254
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951837251}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1951837255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7627,7 +6862,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1972783091}
   - component: {fileID: 1972783090}
-  - component: {fileID: 1972783089}
   - component: {fileID: 1972783087}
   - component: {fileID: 1972783088}
   m_Layer: 0
@@ -7669,22 +6903,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &1972783089
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972783086}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1972783090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7762,7 +6980,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1987698973}
   - component: {fileID: 1987698972}
-  - component: {fileID: 1987698971}
   - component: {fileID: 1987698969}
   - component: {fileID: 1987698970}
   m_Layer: 0
@@ -7804,22 +7021,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &1987698971
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987698968}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &1987698972
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7897,7 +7098,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2018449248}
   - component: {fileID: 2018449247}
-  - component: {fileID: 2018449246}
   - component: {fileID: 2018449244}
   - component: {fileID: 2018449245}
   m_Layer: 0
@@ -7939,22 +7139,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: -1, y: 1, z: 0}
---- !u!58 &2018449246
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018449243}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &2018449247
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8032,7 +7216,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2069547531}
   - component: {fileID: 2069547530}
-  - component: {fileID: 2069547529}
   - component: {fileID: 2069547527}
   - component: {fileID: 2069547528}
   m_Layer: 0
@@ -8074,22 +7257,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: -1, z: 0}
---- !u!58 &2069547529
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069547526}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &2069547530
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8167,7 +7334,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2131570142}
   - component: {fileID: 2131570141}
-  - component: {fileID: 2131570140}
   - component: {fileID: 2131570138}
   - component: {fileID: 2131570139}
   m_Layer: 0
@@ -8209,22 +7375,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 1, y: -1, z: 0}
---- !u!58 &2131570140
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131570137}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &2131570141
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8302,7 +7452,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2132383699}
   - component: {fileID: 2132383698}
-  - component: {fileID: 2132383697}
   - component: {fileID: 2132383695}
   - component: {fileID: 2132383696}
   m_Layer: 0
@@ -8344,22 +7493,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &2132383697
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2132383694}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &2132383698
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8437,7 +7570,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2146214572}
   - component: {fileID: 2146214571}
-  - component: {fileID: 2146214570}
   - component: {fileID: 2146214568}
   - component: {fileID: 2146214569}
   m_Layer: 0
@@ -8479,22 +7611,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Normal>k__BackingField: {x: 0, y: 1, z: 0}
---- !u!58 &2146214570
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2146214567}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &2146214571
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8767,7 +7883,7 @@ MonoBehaviour:
   speed: 6
   lineLength: 1
   returnForce: 6
-  playerEvent: {fileID: 11400000, guid: 8eb688f685d85684db10e67e421fd5c0, type: 2}
+  playerEvent: {fileID: 11400000, guid: 21a2c7140d580be4b80a3f4ecff44275, type: 2}
   gameState: {fileID: 11400000, guid: bcf9b6d5aec7d934885b6b9e72d4ffa9, type: 2}
 --- !u!114 &656973827521034755
 MonoBehaviour:
@@ -8781,7 +7897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a65e9d862cd6c1b4989684f24f827125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerEvent: {fileID: 11400000, guid: 8eb688f685d85684db10e67e421fd5c0, type: 2}
+  playerEvent: {fileID: 11400000, guid: 21a2c7140d580be4b80a3f4ecff44275, type: 2}
   lineCurve: {fileID: 656973827415534272}
 --- !u!1 &656973827521034783
 GameObject:
